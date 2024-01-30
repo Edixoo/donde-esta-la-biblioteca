@@ -13,7 +13,6 @@ public class Program
         var host = CreateHostBuilder(new ConfigurationBuilder());
         
         var catalogService = host.Services.GetRequiredService<ICatalogService>();
-        var managerService = host.Services.GetRequiredService<ICatalogManager>();
         
         catalogService.ShowCatalog();
         
@@ -25,6 +24,7 @@ public class Program
             .ConfigureServices(services =>
             {
                 services.AddScoped<ICatalogService, CatalogService>();
+                services.AddScoped<ICatalogManager, CatalogManager>();
                 // Configuration des services
             })
             .Build();

@@ -8,8 +8,12 @@ namespace Services.Services;
 public class CatalogService : ICatalogService
 
 {
-    private CatalogManager _catalogManager = new CatalogManager();
-    
+    private ICatalogManager _catalogManager;
+
+    public CatalogService(ICatalogManager catalogManager)
+    {
+        _catalogManager = catalogManager;
+    }
     public IEnumerable<Book> ShowCatalog()
     {
         return _catalogManager.DisplayCatalog();
