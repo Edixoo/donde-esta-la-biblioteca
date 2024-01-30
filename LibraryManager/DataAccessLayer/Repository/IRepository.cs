@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repository
 {
-    public class BookRepository : ARepository<Book>
+    public interface IRepository<T> 
     {
+        IEnumerable<T> GetAll();
+        T? Get(int id);
     }
 }

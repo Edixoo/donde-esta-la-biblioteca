@@ -13,8 +13,6 @@
     <ItemGroup>
       <ProjectReference Include="..\BusinessObjects\BusinessObjects.csproj" />
       <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
-      <ProjectReference Include="..\LibraryManager\LibraryManager.csproj" />
-      <ProjectReference Include="..\Services\Services.csproj" />
     </ItemGroup>
 
 </Project>

@@ -11,9 +11,9 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj" />
       <ProjectReference Include="..\BusinessObjects\BusinessObjects.csproj" />
       <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
-      <ProjectReference Include="..\LibraryManager\LibraryManager.csproj" />
     </ItemGroup>
 
 </Project>

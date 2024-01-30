@@ -1,6 +1,6 @@
 namespace BusinessObjects.Entity;
 
-public class author
+public class Author
 {
     public int id { get; set; }
     public string firstName{ get; set; }
