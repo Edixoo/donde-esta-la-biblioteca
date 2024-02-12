@@ -1,10 +1,8 @@
 using BusinessObjects.Entity;
+using DataAccessLayer.Contexts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DataAccessLayer.Contexts;
 
 namespace DataAccessLayer.Repository
 {
@@ -29,6 +27,12 @@ namespace DataAccessLayer.Repository
         {
             return _context.Books.OrderByDescending(b => b.Rate).FirstOrDefault();
         }
+        
+        public IEnumerable<Book> GetFantasyBooks()
+        {
+            return _context.Books.Where(b => b.Type == Book.BookType.Fantasy).ToList();
+        }
+
         
     }
 }

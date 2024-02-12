@@ -11,19 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76fda03f-e24f-4ff6-aaa4-ab2a769cd7f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.LibraryManager/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.LibraryManager/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Services.Test/Services.Test.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BusinessLayer/BusinessLayer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessLayer/BusinessLayer.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LibraryManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LibraryManager/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BusinessLayer/Catalog/CatalogManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessLayer/Catalog/CatalogManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BusinessObjects/BusinessObjects.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessObjects/BusinessObjects.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAccessLayer/DataAccessLayer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/DataAccessLayer.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccessLayer/Repository/AuthorRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/Repository/AuthorRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccessLayer/Repository/BookRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/Repository/BookRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAccessLayer/Repository/IRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/Repository/IRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryManager.sln" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryManager.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryManager/LibraryManager.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryManager/LibraryManager.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Services.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Services.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataAccessLayer/Repository/LibraryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/Repository/LibraryRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/BusinessLayer.Test/BusinessLayerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/BusinessLayer.Test/BusinessLayerTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,27 +46,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.LibraryManager.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "TestUnit",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.LibraryManager.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;TestUnit&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/judekabeya/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache",
-      "/Users/judekabeya/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache",
-      "/Users/judekabeya/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/judekabeya/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/judekabeya/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache&quot;,
+      &quot;/Users/judekabeya/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Project.LibraryManager">
     <configuration name="BusinessLayer.Test" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -159,7 +152,7 @@
       <workItem from="1706624604564" duration="1366000" />
       <workItem from="1707723597678" duration="7240000" />
       <workItem from="1707731224222" duration="153000" />
-      <workItem from="1707731382544" duration="11378000" />
+      <workItem from="1707731382544" duration="15439000" />
     </task>
     <servers />
   </component>

@@ -22,17 +22,18 @@ namespace BusinessLayer.Test
             Assert.AreEqual(1, listBooks.Count());
         }
         
+        
+        
         [TestMethod]
         public void FindBooks_Test()
         {
             var mockRepository = new Mock<IRepository<Book>>();
-            mockRepository.Setup(m => m.Get(1)).Returns(new Book { Id = 1 });
+            mockRepository.Setup(m => m.Get(1)).Returns(new Book { Id = 1});
             var catalogManager = new CatalogManager(mockRepository.Object);
             var book = catalogManager.Find(1);
             Assert.IsNotNull(book);
             Assert.AreEqual(1, book.Id);
         }
-
         
          [TestMethod]
         public void GetBestGradeBook_Test()

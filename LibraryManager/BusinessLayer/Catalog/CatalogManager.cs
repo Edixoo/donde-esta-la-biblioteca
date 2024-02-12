@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using BusinessObjects.Entity;
 using DataAccessLayer.Repository;
@@ -8,46 +9,40 @@ namespace BusinessLayer.Catalog
     public class CatalogManager : ICatalogManager
     {
         private readonly IRepository<Book> _bookRepository;
-        
-        public CatalogManager(IRepository<Book> BookRepository)
+
+        public CatalogManager(IRepository<Book> bookRepository)
         {
-            _bookRepository = BookRepository;
+            _bookRepository = bookRepository;
         }
+
         public IEnumerable<Book> DisplayCatalog()
         {
             return _bookRepository.GetAll();
         }
+
         public Book Find(int id)
         {
             return _bookRepository.Get(id);
         }
 
-        public  IEnumerable<Book> GetFantasyBooks()
+        public IEnumerable<Book> GetFantasyBooks()
         {
-            IEnumerable<Book> books = _bookRepository.GetAll();
-
-            var fantasyBooks = books.Where(book => book.Type == Book.BookType.Fantasy);
-
-            foreach (var book in fantasyBooks)
-            {
-                Console.WriteLine($"{book.Title} - {book.Author}");
-            }
-            return fantasyBooks;
+            return _bookRepository.GetAll().Where(book => book.Type == Book.BookType.Fantasy);
         }
 
         public Book GetBestGradeBook()
         {
-            IEnumerable<Book> books = _bookRepository.GetAll();
-
-            var bestBook = books.OrderByDescending(book => book.Rate).FirstOrDefault();
+            var bestBook = (from book in _bookRepository.GetAll()
+                orderby book.Rate descending
+                select book).FirstOrDefault();
 
             if (bestBook != null)
             {
-                Console.WriteLine($" {bestBook.Title}  {bestBook.Rate}");
+                Console.WriteLine($"{bestBook.Title} - {bestBook.Rate}");
             }
             else
             {
-                Console.WriteLine("Aucun livre trouve.");
+                Console.WriteLine("Aucun livre trouvé.");
             }
 
             return bestBook;
