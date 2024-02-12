@@ -17,7 +17,6 @@ namespace BusinessLayer.Catalog
         {
             return _bookRepository.GetAll();
         }
-
         public Book Find(int id)
         {
             return _bookRepository.Get(id);
@@ -33,7 +32,6 @@ namespace BusinessLayer.Catalog
             {
                 Console.WriteLine($"{book.Title} - {book.Author}");
             }
-
             return fantasyBooks;
         }
 

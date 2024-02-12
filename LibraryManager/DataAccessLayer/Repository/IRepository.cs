@@ -11,5 +11,6 @@ namespace DataAccessLayer.Repository
     {
         IEnumerable<T> GetAll();
         T? Get(int id);
+
     }
 }
