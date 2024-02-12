@@ -7,8 +7,12 @@ namespace BusinessLayer.Catalog
 {
     public class CatalogManager : ICatalogManager
     {
-        private readonly BookRepository _bookRepository = new BookRepository();
+        private readonly IRepository<Book> _bookRepository;
         
+        public CatalogManager(IRepository<Book> BookRepository)
+        {
+            _bookRepository = BookRepository;
+        }
         public IEnumerable<Book> DisplayCatalog()
         {
             return _bookRepository.GetAll();

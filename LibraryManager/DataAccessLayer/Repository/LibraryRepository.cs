@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repository
 {
-    public class BookRepository : IRepository<Book>
+    public class LibraryRepository : IRepository<Library>
     {
-        public IEnumerable<Book>GetAll()
+        public IEnumerable<Library> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public Book? Get(int id)
+        public Library? Get(int id)
         {
             throw new NotImplementedException();
         }

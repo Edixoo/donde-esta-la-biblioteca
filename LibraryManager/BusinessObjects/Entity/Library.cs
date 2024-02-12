@@ -1,8 +1,7 @@
 namespace BusinessObjects.Entity;
 
-public class Library
+public class Library : AEntity
 {
-    public int id{ get; set; }
-    public string name{ get; set; }
-    public string adress { get; set; }
+    public string Name{ get; set; }
+    public string Adress { get; set; }
 }

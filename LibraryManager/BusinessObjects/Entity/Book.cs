@@ -1,8 +1,8 @@
 namespace BusinessObjects.Entity;
 
-public class Book
+public class Book : AEntity
 {
-    public int id { get; set; }
+    //public int id { get; set; }
     public string Title { get; set; }
     public BookType Type { get; set; } 
     public int AuthorId { get; set; }
