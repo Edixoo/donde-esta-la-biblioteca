@@ -17,20 +17,25 @@ namespace DataAccessLayer.Repository
         }
         public IEnumerable<Book> GetAll()
         {
-            return _context.Books.ToList();
+            if (_context.Books != null) return _context.Books.ToList();
+            throw new Exception();
         }
         public Book? Get(int id)
         {
-            return _context.Books.FirstOrDefault(b => b.Id == id);
+            if (_context.Books != null) return _context.Books.FirstOrDefault(b => b.Id == id);
+            throw new Exception();
         }
         public Book? GetBestGradeBook( )
         {
-            return _context.Books.OrderByDescending(b => b.Rate).FirstOrDefault();
+            if (_context.Books != null) return _context.Books.OrderByDescending(b => b.Rate).FirstOrDefault();
+            throw new Exception();
         }
         
         public IEnumerable<Book> GetFantasyBooks()
         {
-            return _context.Books.Where(b => b.Type == Book.BookType.Fantasy).ToList();
+            if (_context.Books != null) return _context.Books.Where(b => b.Type == Book.BookType.Fantasy).ToList();
+
+            throw new Exception();
         }
 
         

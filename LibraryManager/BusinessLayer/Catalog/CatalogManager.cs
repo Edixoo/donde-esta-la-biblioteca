@@ -38,7 +38,7 @@ namespace BusinessLayer.Catalog
 
             if (bestBook != null)
             {
-                Console.WriteLine($"{bestBook.Title} - {bestBook.Rate}");
+                Console.WriteLine($"{bestBook.Name} - {bestBook.Rate}");
             }
             else
             {

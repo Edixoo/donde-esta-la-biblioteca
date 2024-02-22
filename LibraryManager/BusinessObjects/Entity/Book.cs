@@ -3,9 +3,8 @@ namespace BusinessObjects.Entity;
 public class Book : AEntity
 {
     //public int id { get; set; }
-    public string Title { get; set; }
+    public string Name { get; set; }
     public BookType Type { get; set; } 
-    public int AuthorId { get; set; }
     public Author Author { get; set; } 
     public int Rate { get; set; }
     

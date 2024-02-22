@@ -27,7 +27,7 @@ public class Program
             .ConfigureServices(services =>
             {
                 services.AddDbContext<LibraryContext>(options =>
-                    options.UseSqlite("Data Source=C:\\Users\akimo\\OneDrive\\Bureau\\donde-esta-la-biblioteca\\ressources\\library.db;"));
+                    options.UseSqlite(@"Data Source=C:\\Users\\akimo\\OneDrive\\Bureau\\donde-esta-la-biblioteca\\ressources\\library.db;"));
                 
                 services.AddScoped<ICatalogManager, CatalogManager>();
                 services.AddScoped<ICatalogService, CatalogService>();

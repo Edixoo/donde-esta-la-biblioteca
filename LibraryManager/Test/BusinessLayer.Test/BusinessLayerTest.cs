@@ -14,7 +14,7 @@ namespace BusinessLayer.Test
         public void GetFantasyBooks_Test()
         {
             var mockRepository = new Mock<IRepository<Book>>();
-            var books = new List<Book> { new Book { Id = 1, Title = "Le Horla", Type = Book.BookType.Fantasy }, new Book { Id = 2, Title = "La parure", Type = Book.BookType.Action, Rate = 5 } };
+            var books = new List<Book> { new Book { Id = 1, Name = "Le Horla", Type = Book.BookType.Fantasy }, new Book { Id = 2, Name = "La parure", Type = Book.BookType.Action, Rate = 5 } };
             mockRepository.Setup(m => m.GetAll()).Returns(books);
             var catalogManager = new CatalogManager(mockRepository.Object);
             var listBooks = catalogManager.GetFantasyBooks();

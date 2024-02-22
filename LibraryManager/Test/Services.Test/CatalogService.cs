@@ -11,7 +11,7 @@ public class CatalogService
 
     {
         var mockManager = new Mock<ICatalogManager> ();
-        var books = new List<Book> { new() { Id = 1, Title = "Le Horla", Type = Book.BookType.Fantasy }, new() { Id = 2 , Title = "La parure", Type = Book.BookType.Fantasy, Rate = 5 } };
+        var books = new List<Book> { new() { Id = 1, Name = "Le Horla", Type = Book.BookType.Fantasy }, new() { Id = 2 , Name = "La parure", Type = Book.BookType.Fantasy, Rate = 5 } };
         mockManager.Setup(m => m.GetFantasyBooks()).Returns(books);
         Assert.IsNotNull(books);
         Assert.AreEqual(2, books.Count);
