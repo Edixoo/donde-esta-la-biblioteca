@@ -1,8 +1,5 @@
 using BusinessObjects.Entity;
 using DataAccessLayer.Contexts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace DataAccessLayer.Repository
 {
@@ -38,6 +35,13 @@ namespace DataAccessLayer.Repository
             throw new Exception();
         }
 
-        
+        public async Task<Book?> Add(Book? book)
+        {
+            var createdBook = await _context.Books.AddAsync(book);
+
+            _context.SaveChangesAsync();
+
+            return Get(book.Id);
+        }
     }
 }

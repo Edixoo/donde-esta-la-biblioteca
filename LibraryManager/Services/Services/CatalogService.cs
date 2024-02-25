@@ -28,10 +28,21 @@ public class CatalogService : ICatalogService
         return _catalogManager.GetFantasyBooks();
 
     }
+
+    public Book FindBook()
+    {
+        throw new NotImplementedException();
+    }
+
     public Book GetBestGradeBook()
     {
         return _catalogManager.GetBestGradeBook();
 
+    }
+
+    public async Task<Book?> AddBook(Book book)
+    {
+        return await _catalogManager.AddBook(book);
     }
 }
 

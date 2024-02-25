@@ -1,5 +1,8 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace BusinessObjects.Entity;
 
+[Table("author")]
 public class Author : AEntity
 {
     public string firstName{ get; set; }

@@ -29,5 +29,11 @@ namespace DataAccessLayer.Repository
             throw new NotImplementedException();
             
         }
+        
+        public Task<Library?> Add(Library? library)
+        {
+            if (library == null) throw new ArgumentNullException(nameof(library));
+            throw new NotImplementedException();
+        }
     }
 }

@@ -8,6 +8,10 @@ namespace Services.Services
 
         public IEnumerable<Book> GetFantasyBooks();
 
+        public Book FindBook();
+        
         public Book GetBestGradeBook();
+
+        public Task<Book?> AddBook(Book book);
     }
 }

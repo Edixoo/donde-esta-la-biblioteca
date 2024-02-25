@@ -14,22 +14,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76fda03f-e24f-4ff6-aaa4-ab2a769cd7f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LibraryManager.Hosting/BookController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LibraryManager.Hosting/LibraryManager.Hosting.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LibraryManager.Hosting/LibraryManager.Hosting.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LibraryManager.Hosting/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LibraryManager.Hosting/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LibraryManager.Hosting/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LibraryManager.Hosting/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LibraryManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LibraryManager/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BusinessLayer/Catalog/CatalogManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessLayer/Catalog/CatalogManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BusinessLayer/Catalog/ICatalogManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessLayer/Catalog/ICatalogManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BusinessObjects/Entity/Author.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessObjects/Entity/Author.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BusinessObjects/Entity/Book.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessObjects/Entity/Book.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccessLayer/Contexts/LibraryContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/Contexts/LibraryContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataAccessLayer/Repository/AuthorRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/Repository/AuthorRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccessLayer/Repository/BookRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/Repository/BookRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryManager.sln" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryManager.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryManager/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryManager/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/BusinessLayer.Test/BusinessLayerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/BusinessLayer.Test/BusinessLayerTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Services.Test/CatalogService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Services.Test/CatalogService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataAccessLayer/Repository/IRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/Repository/IRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataAccessLayer/Repository/LibraryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/Repository/LibraryRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryManager.Hosting/BookController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryManager.Hosting/BookController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Services/CatalogService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Services/CatalogService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Services/ICatalogService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Services/ICatalogService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ressources/library.db" beforeDir="false" afterPath="$PROJECT_DIR$/../ressources/library.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +43,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Test/CatalogServiceTest/UnitTest1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/efcore/423b1a0d38036efcefdbf1dfb80955449eae1238/src/EFCore/DbSet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/akimo/OneDrive/Bureau/donde-esta-la-biblioteca/LibraryManager/BusinessObjects/Entity/Book.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/akimo/OneDrive/Bureau/donde-esta-la-biblioteca/LibraryManager/DataAccessLayer/Contexts/LibraryContext.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -83,9 +86,9 @@
       &quot;sqlite&quot;
     ],
     &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/judekabeya/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/judekabeya/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache&quot;,
-      &quot;/Users/judekabeya/.local/share/Symbols/src&quot;
+      &quot;C:\\Users\\akimo\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\akimo\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\akimo\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
 }</component>
@@ -222,7 +225,20 @@
       <workItem from="1707731224222" duration="153000" />
       <workItem from="1707731382544" duration="15439000" />
       <workItem from="1708607834108" duration="8000" />
+      <workItem from="1708615688937" duration="2492000" />
+      <workItem from="1708690588643" duration="621000" />
+      <workItem from="1708692171019" duration="4699000" />
+      <workItem from="1708883783392" duration="3285000" />
     </task>
+    <task id="LOCAL-00001" summary="Etape 7">
+      <option name="closed" value="true" />
+      <created>1708616090873</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708616090873</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +247,7 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Etape 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Etape 7" />
   </component>
 </project>

@@ -47,5 +47,10 @@ namespace BusinessLayer.Catalog
 
             return bestBook;
         }
+
+        public async Task<Book?> AddBook(Book book)
+        {
+            return await _bookRepository.Add(book);
+        }
     }
 }

@@ -16,13 +16,20 @@ namespace DataAccessLayer.Repository
         
         public IEnumerable<Author>GetAll()
         {
-            return _context.Authors.ToList();
+            return _context.author.ToList();
         }
         public Author? Get(int id)
         {
-            return _context.Authors.FirstOrDefault(b => b.Id == id);
+            return _context.author.FirstOrDefault(b => b.Id == id);
         }
-        
-        
+
+        public async Task<Author?> Add(Author? author)
+        {
+            var createdAuthor = await _context.author.AddAsync(author);
+
+            _context.SaveChangesAsync();
+
+            return Get(author.Id);
+        }
     }
 }

@@ -52,4 +52,25 @@ public class BookController: ControllerBase
 
         return books;
     }
+    
+    [HttpPost]
+    public async Task<ActionResult<Book>>
+        CreateBook([FromBody]Book book)
+    {
+        try
+        {
+            if (book == null)
+                return BadRequest();
+
+            var createdBook = await _service.AddBook(book);
+
+            return CreatedAtAction(nameof(GetBooksById),
+                new { id = createdBook.Id }, createdBook);
+        }
+        catch (Exception)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError,
+                "Error creating new employee record");
+        }
+    }
 }

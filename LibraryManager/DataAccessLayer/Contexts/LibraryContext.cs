@@ -7,7 +7,7 @@ public class LibraryContext : DbContext
 {
     public readonly DbContextOptionsBuilder _context;
     public DbSet<Book>? Books { get; set; }
-    public DbSet<Author>? Authors { get; set; }
+    public DbSet<Author>? author { get; set; }
     
     public LibraryContext(DbContextOptions<LibraryContext> options)
         : base(options)
@@ -16,16 +16,10 @@ public class LibraryContext : DbContext
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Book>().ToTable("book")
+        modelBuilder.Entity<Book>()
             .HasOne<Author>(b => b.Author)
             .WithMany(a => a.Books)
             .HasForeignKey("id_author");
-
-
-        modelBuilder.Entity<Author>().ToTable("author")
-            .HasMany(a => a.Books)
-            .WithOne(a => a.Author)
-            .HasForeignKey(b => b.Id);
     }
 
 }
