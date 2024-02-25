@@ -7,7 +7,7 @@ public class LibraryContext : DbContext
 {
     public readonly DbContextOptionsBuilder _context;
     public DbSet<Book>? Books { get; set; }
-    public DbSet<Author>? author { get; set; }
+    public DbSet<Author>? Authors { get; set; }
     
     public LibraryContext(DbContextOptions<LibraryContext> options)
         : base(options)
